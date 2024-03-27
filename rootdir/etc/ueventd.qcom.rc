@@ -473,6 +473,10 @@ subsystem mem_buf_vm
 /sys/class/leds/blue     repeat       0640    system    system
 /sys/class/leds/blue     hw_pattern   0640    system    system
 
+#Haptics class devices
+/sys/class/qcom-haptics    visense_enabled     0400    system    system
+/sys/class/qcom-haptics    primitive_duration  0600    system    system
+
 # NPU device
 /dev/msm_npu             0644   system     system
 
