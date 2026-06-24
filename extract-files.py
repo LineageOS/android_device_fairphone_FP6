@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -49,6 +51,15 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 
+def append_perfboost_resources(
+    config_attrs: str, append_str: str
+) -> tuple[str, str]:
+    pattern = rf'({re.escape(config_attrs)}[\s\S]*?Resources=")([^"]*)(")'
+    replacement = rf'\g<1>\g<2>{append_str}\g<3>'
+
+    return pattern, replacement
+
+
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
@@ -65,6 +76,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbinder_shim.so'),
     'vendor/etc/init/tctd.rc': blob_fixup()
         .regex_replace('.+seclabel.+\n', ''),
+    'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
+        .regex_replace(*append_perfboost_resources(
+            'Id="0x00001080" Type="1" Enable="true" Target="volcano" Fps="120"',
+            ', 0x40C44000, 0x7F'  # SCHED_CPUSET_SYSTEM_BACKGROUND: 0-6
+        )),
     'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
         .add_line_if_missing('rt_tgsigqueueinfo: 1'),
     (
