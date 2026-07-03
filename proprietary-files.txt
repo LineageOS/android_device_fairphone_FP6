@@ -1511,9 +1511,6 @@ vendor/firmware/haptic_rtp_lighthouse.bin
 vendor/firmware/haptic_rtp_osc_24K_5s.bin
 vendor/firmware/haptic_rtp_silk.bin
 
-# VM mem
-vendor/lib64/libvmmem.so
-
 # VM mgr
 vendor/bin/vmmgr
 vendor/etc/init/vmmgr.rc
