@@ -80,7 +80,7 @@ namespace vibrator {
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
-static const char LED_DEVICE[] = "/sys/class/leds/vibrator_1";
+static const char LED_DEVICE[] = "/sys/class/leds/aw_vibrator";
 static const char HAPTICS_SYSFS[] = "/sys/class/qcom-haptics";
 
 static constexpr int32_t ComposeDelayMaxMs = 1000;
@@ -138,7 +138,6 @@ InputFFDevice::InputFFDevice()
         }
 
         if (strcmp(name, "qcom-hv-haptics") && strcmp(name, "qti-haptics")
-                && strcmp(name, "aw-haptic-hv")
                 && strcmp(name, "aw8624_haptic")
                 && strcmp(name, "aw8695_haptic")
                 && strcmp(name, "aw8697_haptic")

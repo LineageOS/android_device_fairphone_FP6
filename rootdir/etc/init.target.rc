@@ -133,6 +133,19 @@ on post-fs-data
     chmod 0660 /sys/class/debug_ois/afdrift
     chmod 0660 /sys/class/debug_ois/oisops
     chmod 0660 /sys/class/debug_ois/oisreg
+    #add vibrator
+    chown system system /sys/class/leds/aw_vibrator/trigger
+    chown system system /sys/class/leds/aw_vibrator/activate
+    chown system system /sys/class/leds/aw_vibrator/brightness
+    chown system system /sys/class/leds/aw_vibrator/duration
+    chown system system /sys/class/leds/aw_vibrator/state
+    chown system system /sys/class/leds/aw_vibrator/loop
+    chown system system /sys/class/leds/aw_vibrator/seq
+    chown system system /sys/class/leds/aw_vibrator/index
+    chown system system /sys/class/leds/aw_vibrator/enable
+    chown system system /sys/class/leds/aw_vibrator/rtp
+    chown system system /sys/class/leds/aw_vibrator/activate_mode
+    chown system system /sys/class/leds/aw_vibrator/gain
 
     wait /sys/devices/platform/soc/ac0000.qcom,qupv3_0_geni_se/a80000.spi/spi_master/spi0/spi0.0/gesture_wakeup 20
     chown system system /sys/devices/platform/soc/ac0000.qcom,qupv3_0_geni_se/a80000.spi/spi_master/spi0/spi0.0/gesture_wakeup
