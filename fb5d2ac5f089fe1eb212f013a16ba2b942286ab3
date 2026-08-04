@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eab115e3_a534b4dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-08-04T20:08:00Z",
+      "side": 1,
+      "message": "since the package is not up on fairphone site yet, here\u0027s the link: https://android.googleapis.com/packages/ota-api/package/7a14e76f3e265d09e8b0f906fb22804a24877d60.zip is the latest build",
+      "revId": "fb5d2ac5f089fe1eb212f013a16ba2b942286ab3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
