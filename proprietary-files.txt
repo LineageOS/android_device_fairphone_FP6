@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from FP6.QREL.16.95.0
+# All unpinned blobs below are extracted from FP6.QREL.16.104.0
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
