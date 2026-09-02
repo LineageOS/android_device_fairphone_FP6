@@ -52,5 +52,8 @@
 /vendor/bin/tctd    u:object_r:tctd_exec:s0
 /dev/socket/tctd    u:object_r:tctd_socket:s0
 
+# Vibrator
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.FP6               u:object_r:hal_vibrator_default_exec:s0
+
 # WLAN MAC
 /vendor/bin/setwlanmac.sh    u:object_r:vendor_wlan_mac_exec:s0
