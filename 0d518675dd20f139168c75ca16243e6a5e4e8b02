@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e422c1bb_15a09bfc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-09-11T14:11:59Z",
+      "side": 1,
+      "message": "Verified as far as compile:\n\nnexus@prism:~/lineage-23.2$ cat out/target/product/FP6/android-info.txt\nrequire board\u003dFP6|FP6_US",
+      "revId": "0d518675dd20f139168c75ca16243e6a5e4e8b02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
