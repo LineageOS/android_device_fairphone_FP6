@@ -34,6 +34,24 @@
       "parentUuid": "94ef01cd_ff5574aa",
       "revId": "760e8f2a83be45f1e088b6ddbddd2bbea09cb878",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2499f465_b82f33bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-09-11T12:36:21Z",
+      "side": 1,
+      "message": "the commit message screams \"claude committed it\", hence why i asked you to tag it as AI assisted.",
+      "parentUuid": "a3a03dfe_2586fd42",
+      "revId": "760e8f2a83be45f1e088b6ddbddd2bbea09cb878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
