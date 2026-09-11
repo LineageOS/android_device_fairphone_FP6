@@ -128,7 +128,7 @@ on post-fs-data
     mkdir /mnt/vendor/persist/cam_cali 0770 system system
     restorecon_recursive /mnt/vendor/persist/cam_cali
     mkdir /mnt/vendor/persist/camera 0770 system system
-    chown system system /dev/stmvl53l1_ranging
+    chown system camera /dev/stmvl53l1_ranging
     chmod 0660 /dev/stmvl53l1_ranging
     chmod 0660 /sys/class/debug_ois/afdrift
     chmod 0660 /sys/class/debug_ois/oisops
