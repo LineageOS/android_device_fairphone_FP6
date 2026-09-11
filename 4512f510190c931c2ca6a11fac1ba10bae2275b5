@@ -46,6 +46,30 @@
       },
       "revId": "4512f510190c931c2ca6a11fac1ba10bae2275b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00e990a0_a7099ed4",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-09-11T14:00:08Z",
+      "side": 0,
+      "message": "Yeah, ro.product.board is empty after removing this, assumed it was derived from some other flag, adding back.",
+      "parentUuid": "a3bc68e7_68f578f7",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 2
+      },
+      "revId": "4512f510190c931c2ca6a11fac1ba10bae2275b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
