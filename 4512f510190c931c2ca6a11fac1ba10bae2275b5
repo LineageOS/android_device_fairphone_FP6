@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "911b48a8_b0ba43a4",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-09-11T11:32:32Z",
+      "side": 0,
+      "message": "What is ro.product.board set to after removing it?",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 2
+      },
+      "revId": "4512f510190c931c2ca6a11fac1ba10bae2275b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
