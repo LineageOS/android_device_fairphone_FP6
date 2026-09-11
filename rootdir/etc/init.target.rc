@@ -127,7 +127,7 @@ on post-fs-data
     chmod 0660 /sys/class/deviceinfo/device_info/CamOTPF
     mkdir /mnt/vendor/persist/cam_cali 0770 system system
     restorecon_recursive /mnt/vendor/persist/cam_cali
-    mkdir /mnt/vendor/persist/camera 0770 system system
+    mkdir /mnt/vendor/persist/camera 0770 system camera
     chown system camera /dev/stmvl53l1_ranging
     chmod 0660 /dev/stmvl53l1_ranging
     chmod 0660 /sys/class/debug_ois/afdrift
