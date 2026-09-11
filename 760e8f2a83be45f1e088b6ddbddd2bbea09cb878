@@ -16,6 +16,24 @@
       "message": "https://github.com/LineageOS/charter/blob/main/ai-coding-assistants.md since it seems like you might have uses ai to generate this change.",
       "revId": "760e8f2a83be45f1e088b6ddbddd2bbea09cb878",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3a03dfe_2586fd42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-09-11T12:34:51Z",
+      "side": 1,
+      "message": "Everything in the patch/commitmsg is from me, and I did final verification myself. The charter is unclear about what makes a patch \"AI generated\" but I added the tag to be sure since I do use AI for discovery, search and automated testing.",
+      "parentUuid": "94ef01cd_ff5574aa",
+      "revId": "760e8f2a83be45f1e088b6ddbddd2bbea09cb878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
