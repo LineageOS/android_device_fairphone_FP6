@@ -22,6 +22,30 @@
       },
       "revId": "4512f510190c931c2ca6a11fac1ba10bae2275b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07aba1ec_493a6e4a",
+        "filename": "audio/usecaseKvManager.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1373,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-09-20T21:42:03Z",
+      "side": 0,
+      "message": "Acknowledged",
+      "parentUuid": "d41b5445_a9eb73d2",
+      "range": {
+        "startLine": 1373,
+        "startChar": 85,
+        "endLine": 1373,
+        "endChar": 86
+      },
+      "revId": "4512f510190c931c2ca6a11fac1ba10bae2275b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
