@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b295b621_96cc024e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-30T14:59:15Z",
+      "side": 1,
+      "message": "Now xml file matches, but finger is still lost, with the addition of having a system notification mentioning that.",
+      "revId": "412189d26768ba2aa3173897e4a712e1d500a343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
