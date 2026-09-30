@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e107d5c_8a680740",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-09-30T15:53:03Z",
+      "side": 1,
+      "message": "I have a working slop fix for the FF backend for 23.2, it would be entirely in android_kernel_fairphone_sm7635. It fixes the incomplete haptic_hv implementation but I need time to review it and test in on 24.",
+      "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
