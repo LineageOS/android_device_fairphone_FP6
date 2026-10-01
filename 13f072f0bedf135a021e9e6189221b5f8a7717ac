@@ -16,6 +16,24 @@
       "message": "```suggestion\nFP6: overlay: Correct fingerprint/power button y location\n```",
       "revId": "13f072f0bedf135a021e9e6189221b5f8a7717ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45e45caf_f5065e32",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-01T11:08:58Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "3ee363bc_bf399c84",
+      "revId": "13f072f0bedf135a021e9e6189221b5f8a7717ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
