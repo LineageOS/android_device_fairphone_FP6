@@ -16,6 +16,41 @@
       "message": "I have a working slop fix for the FF backend for 23.2, it would be entirely in android_kernel_fairphone_sm7635. It fixes the incomplete haptic_hv implementation but I need time to review it and test in on 24.",
       "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50612a9b_2d03a15c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-02T20:21:08Z",
+      "side": 1,
+      "message": "The reason why 24.0 loses touch feedback is the android.os.vibrator.remove_hidl_support build flag, which disables a fallback that was previously hiding the faulty driver. I built with it disabled and it restored haptics to 23.2 behavior (which falls back to 20ms on every touch effect). \nI also did a separate build with the backend fix on 24.0 and it works; I will probably send patches this weekend. I\u0027m still going through the datasheet since it involves adding missing registers to the vendor header.",
+      "parentUuid": "3e107d5c_8a680740",
+      "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5ada62d_20734bcd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-02T20:21:08Z",
+      "side": 1,
+      "message": "I\u0027d disable android.os.vibrator.remove_hidl_support or wait for the driver fix.",
+      "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
