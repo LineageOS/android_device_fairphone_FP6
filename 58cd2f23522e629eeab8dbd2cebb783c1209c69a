@@ -51,6 +51,24 @@
       "message": "I\u0027d disable android.os.vibrator.remove_hidl_support or wait for the driver fix.",
       "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d580960d_b3bb370c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-04T19:30:43Z",
+      "side": 1,
+      "message": "I submitted the patches:\nChange 506312 restores vibrator effects via backend fix, with change 506313 also fixing effect strength.",
+      "parentUuid": "e5ada62d_20734bcd",
+      "revId": "58cd2f23522e629eeab8dbd2cebb783c1209c69a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
