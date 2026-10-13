@@ -1517,7 +1517,6 @@ vendor/lib64/libtime_genoff.so
 vendor/firmware/EPH86XX_fw.bin
 
 # Vibrator
-vendor/firmware/haptic_ram.bin
 vendor/firmware/haptic_rtp.bin
 vendor/firmware/haptic_rtp_auto_sin.bin
 vendor/firmware/haptic_rtp_lighthouse.bin
