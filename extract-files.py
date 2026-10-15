@@ -67,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libqms_client.so',
     ): blob_fixup()
         .add_needed('libbinder_shim.so'),
+    'vendor/bin/hw/android.hardware.biometrics.fingerprint-service': blob_fixup()
+        .add_needed('libshims_aidl_fingerprint.so'),
     'vendor/etc/init/tctd.rc': blob_fixup()
         .regex_replace('.+seclabel.+\n', ''),
     'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
