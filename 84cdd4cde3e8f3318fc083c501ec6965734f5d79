@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dfbdd372_d0d969e2",
+        "filename": "properties/vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-26T23:02:59Z",
+      "side": 1,
+      "message": "Should be 3500 ms, maybe more.\n\nUnlike pixels, FP6 has no kernel idle timer, so mode switches have significant latency. With the current 10 Hz floor it causes 100-250 ms latency when touched, and the short idle timer causes it to happen after every touch. It feels very choppy. \n\nStock sets the floor outside of AOD to 30 Hz (40-70 ms latency), and also uses 3500 ms idle timer so that switching doesn\u0027t happen much during typical use.",
+      "range": {
+        "startLine": 131,
+        "startChar": 37,
+        "endLine": 131,
+        "endChar": 39
+      },
+      "revId": "84cdd4cde3e8f3318fc083c501ec6965734f5d79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
