@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4aafa333_de99222c",
+        "filename": "properties/vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-27T08:58:02Z",
+      "side": 1,
+      "message": "For me, this line causes AOD to be pinned to 120 Hz. Leaving it out seems fine.",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 130,
+        "endChar": 50
+      },
+      "revId": "84cdd4cde3e8f3318fc083c501ec6965734f5d79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dfbdd372_d0d969e2",
         "filename": "properties/vendor.prop",
         "patchSetId": 2
@@ -38,6 +61,30 @@
       "side": 1,
       "message": "10Hz is being dropped here https://review.lineageos.org/c/LineageOS/android_kernel_fairphone_sm7635-devicetrees/+/510439",
       "parentUuid": "dfbdd372_d0d969e2",
+      "range": {
+        "startLine": 131,
+        "startChar": 37,
+        "endLine": 131,
+        "endChar": 39
+      },
+      "revId": "84cdd4cde3e8f3318fc083c501ec6965734f5d79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5201780c_b617ef4a",
+        "filename": "properties/vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-10-27T08:58:02Z",
+      "side": 1,
+      "message": "Sorry, missed it. Still, taking 3500 ms from FP seems better to avoid the 30 Hz -\u003e 120 Hz stutters as much as possible.",
+      "parentUuid": "3f3ddaee_fc83fdaa",
       "range": {
         "startLine": 131,
         "startChar": 37,
