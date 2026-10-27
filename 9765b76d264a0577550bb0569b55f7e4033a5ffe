@@ -34,6 +34,24 @@
       "parentUuid": "379179d7_e1a017ee",
       "revId": "9765b76d264a0577550bb0569b55f7e4033a5ffe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "685c8886_ffd8cc61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-10-27T15:15:16Z",
+      "side": 1,
+      "message": "This solution doesn\u0027t work with new AIDL HAL. Alternative fix is https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/504413",
+      "parentUuid": "e534b851_90596200",
+      "revId": "9765b76d264a0577550bb0569b55f7e4033a5ffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
