@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "379179d7_e1a017ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-10-27T10:34:24Z",
+      "side": 1,
+      "message": "You should use https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8550-common/+/508248 for sm8550+",
+      "revId": "9765b76d264a0577550bb0569b55f7e4033a5ffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
