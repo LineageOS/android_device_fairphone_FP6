@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe414f3b_6508269c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-31T14:17:59Z",
+      "side": 1,
+      "message": "I\u0027ve tested this topic, but vibrations in general feel weaker than before now, even when setting the level to high",
+      "revId": "9b555066b2e86d17989c484f648942c6f256d606",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
