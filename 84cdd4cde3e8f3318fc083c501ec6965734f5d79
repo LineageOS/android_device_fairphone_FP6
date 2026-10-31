@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc79fbb5_f11f6bdf",
+        "filename": "properties/vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-31T03:12:22Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "4aafa333_de99222c",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 130,
+        "endChar": 50
+      },
+      "revId": "84cdd4cde3e8f3318fc083c501ec6965734f5d79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dfbdd372_d0d969e2",
@@ -109,6 +133,30 @@
       "side": 1,
       "message": "Stock sets:\n```\nro.surface_flinger.set_idle_timer_ms\u003d3500\nro.surface_flinger.set_touch_timer_ms\u003d3500000\n```\nwhich is absurdly high at least for the set_touch_timer_ms being ~58 minutes effectively it will never trigger and display is stuck at 120Hz",
       "parentUuid": "5201780c_b617ef4a",
+      "range": {
+        "startLine": 131,
+        "startChar": 37,
+        "endLine": 131,
+        "endChar": 39
+      },
+      "revId": "84cdd4cde3e8f3318fc083c501ec6965734f5d79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbb28714_c513708f",
+        "filename": "properties/vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-31T03:12:22Z",
+      "side": 1,
+      "message": "I simply just set idle timer for now matching stock, this should be the closest possible experience without framework hacks.",
+      "parentUuid": "02ba1614_b0c89514",
       "range": {
         "startLine": 131,
         "startChar": 37,
