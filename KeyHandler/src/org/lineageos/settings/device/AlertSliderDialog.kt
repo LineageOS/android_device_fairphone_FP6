@@ -207,6 +207,8 @@ class AlertSliderDialog(private val context: Context) :
                 KeyHandler.ZEN_ALARMS_ONLY -> R.drawable.ic_alarm
                 KeyHandler.TORCH_ON -> R.drawable.ic_torch_on
                 KeyHandler.TORCH_OFF -> R.drawable.ic_torch_off
+                KeyHandler.AIRPLANE_MODE_ON -> R.drawable.ic_airplane_mode_on
+                KeyHandler.AIRPLANE_MODE_OFF -> R.drawable.ic_airplane_mode_off
                 else -> R.drawable.ic_info
             }
         )
@@ -221,6 +223,8 @@ class AlertSliderDialog(private val context: Context) :
                 KeyHandler.ZEN_ALARMS_ONLY -> R.string.alert_slider_mode_dnd_alarms_only
                 KeyHandler.TORCH_ON -> R.string.alert_slider_mode_torch_on
                 KeyHandler.TORCH_OFF -> R.string.alert_slider_mode_torch_off
+                KeyHandler.AIRPLANE_MODE_ON -> R.string.alert_slider_mode_airplane_mode_on
+                KeyHandler.AIRPLANE_MODE_OFF -> R.string.alert_slider_mode_airplane_mode_off
                 else -> R.string.alert_slider_mode_none
             }
         )
