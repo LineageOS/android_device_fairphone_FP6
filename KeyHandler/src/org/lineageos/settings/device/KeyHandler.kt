@@ -14,10 +14,12 @@ import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
 import android.media.AudioManager
 import android.media.AudioSystem
+import android.net.ConnectivityManager
 import android.os.VibrationAttributes
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.provider.Settings
+import android.sysprop.TelephonyProperties
 import android.view.KeyEvent
 import com.android.internal.os.DeviceKeyHandler
 import java.io.File
@@ -26,6 +28,7 @@ import java.util.concurrent.Executors
 class KeyHandler(private val context: Context) : DeviceKeyHandler {
     private val audioManager = context.getSystemService(AudioManager::class.java)!!
     private val cameraManager = context.getSystemService(CameraManager::class.java)!!
+    private val connectivityManager = context.getSystemService(ConnectivityManager::class.java)!!
     private val notificationManager = context.getSystemService(NotificationManager::class.java)!!
     private val vibrator = context.getSystemService(Vibrator::class.java)!!
 
@@ -172,6 +175,12 @@ class KeyHandler(private val context: Context) : DeviceKeyHandler {
                         cameraManager.setTorchMode(cameraId, mode == TORCH_ON)
                     }
                 }
+                AIRPLANE_MODE_ON,
+                AIRPLANE_MODE_OFF -> {
+                    if (!setAirplaneMode(mode == AIRPLANE_MODE_ON)) {
+                        return@submit
+                    }
+                }
             }
 
             if (!firstRun) {
@@ -189,6 +198,26 @@ class KeyHandler(private val context: Context) : DeviceKeyHandler {
         while (notificationManager.zenMode != zenMode) {
             Thread.sleep(10)
         }
+    }
+
+    private fun setAirplaneMode(enabled: Boolean): Boolean {
+        // Don't enable airplane mode while in emergency callback mode
+        if (enabled && TelephonyProperties.in_ecm_mode().orElse(false)) {
+            return false
+        }
+
+        // Avoid needlessly toggling the radios if already in the requested state
+        val isEnabled =
+            Settings.Global.getInt(
+                context.contentResolver,
+                Settings.Global.AIRPLANE_MODE_ON,
+                0,
+            ) != 0
+        if (isEnabled != enabled) {
+            connectivityManager.setAirplaneMode(enabled)
+        }
+
+        return true
     }
 
     private fun sendNotification(position: Int, mode: Int) {
@@ -228,6 +257,11 @@ class KeyHandler(private val context: Context) : DeviceKeyHandler {
         private const val TORCH_OFFSET = 8
         const val TORCH_ON = TORCH_OFFSET + 0
         const val TORCH_OFF = TORCH_OFFSET + 1
+
+        // Airplane mode constants
+        private const val AIRPLANE_MODE_OFFSET = 10
+        const val AIRPLANE_MODE_ON = AIRPLANE_MODE_OFFSET + 0
+        const val AIRPLANE_MODE_OFF = AIRPLANE_MODE_OFFSET + 1
 
         // Vibration attributes
         private val HARDWARE_FEEDBACK_VIBRATION_ATTRIBUTES =
