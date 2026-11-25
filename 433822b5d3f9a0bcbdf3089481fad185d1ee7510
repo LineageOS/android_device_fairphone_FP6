@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3108d460_16011d2f",
+        "filename": "rootdir/etc/ueventd.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 477,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-11-25T20:09:15Z",
+      "side": 1,
+      "message": "not needed, doesn\u0027t exist on FP6",
+      "range": {
+        "startLine": 477,
+        "startChar": 0,
+        "endLine": 477,
+        "endChar": 71
+      },
+      "revId": "433822b5d3f9a0bcbdf3089481fad185d1ee7510",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
