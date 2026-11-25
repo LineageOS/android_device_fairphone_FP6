@@ -34,6 +34,24 @@
       "parentUuid": "fe414f3b_6508269c",
       "revId": "9b555066b2e86d17989c484f648942c6f256d606",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57f72f6a_d74e810e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37990
+      },
+      "writtenOn": "2026-11-25T20:49:12Z",
+      "side": 1,
+      "message": "Went over the effects again, mostly making tick and low_tick significantly stronger, but distinctly weaker than click. Some effects feel weaker than without this patchset because they were previously playing unintentionally strong. For example, tick was playing an already strong stock wave at whatever the last used scale was, often max scale. Now, tick/click are designed so that click feels 1.4x stronger than tick as per recommendations.",
+      "parentUuid": "4d8c48b8_2fd443f7",
+      "revId": "9b555066b2e86d17989c484f648942c6f256d606",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
